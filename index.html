@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solar Nebulae</title>
+<meta name="description" content="Small puzzle games for your phone. Home of Pulse, the magnet puzzle.">
+<link rel="icon" href="pulse-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Mono:wght@500&family=Figtree:wght@400;600&display=swap">
+<style>
+:root{
+  --paper:#E6EBEF; --board:#CFD8DF; --ink:#16212B; --muted:#566573; --pull:#1D5BD1; --push:#C92A48;
+  --display:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root{
+  --paper:#0F151B; --board:#1A232C; --ink:#E7EDF2; --muted:#93A2B0; --pull:#5B92FF; --push:#FF5F7A; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;padding:48px 16px 32px}
+main{max-width:520px;margin-inline:auto;display:flex;flex-direction:column;gap:28px}
+h1{font-family:var(--display);font-weight:800;font-size:2.6rem;line-height:.95;letter-spacing:-.03em;margin:0}
+.kicker{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+p{margin:0}
+.game{display:flex;gap:16px;align-items:center;background:var(--board);border-radius:16px;padding:16px;text-decoration:none;color:inherit}
+.game img{width:72px;height:72px;border-radius:16px;flex:none}
+.game h2{font-family:var(--display);font-weight:800;font-size:1.5rem;margin:0}
+.game h2 span{color:var(--push)} .game h2 span+span{color:var(--pull)}
+.game p{color:var(--muted);font-size:.95rem}
+.links{display:flex;gap:16px;flex-wrap:wrap;font-weight:600}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+footer{font-size:.9rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="kicker">Indie games</p>
+    <h1>Solar Nebulae</h1>
+  </header>
+  <p>Small puzzle games for your phone, made to be picked up for a few minutes a day.</p>
+  <a class="game" href="https://pulse.solarnebulae.com/">
+    <img src="pulse-icon.png" alt="">
+    <div>
+      <h2>Pu<span>l</span><span>s</span>e</h2>
+      <p>A magnet puzzle where every pulse moves the whole row and column. New pieces every page, and a fresh daily puzzle.</p>
+    </div>
+  </a>
+  <div class="links">
+    <a href="https://pulse.solarnebulae.com/daily/">Play today's daily</a>
+    <a href="https://pulse.solarnebulae.com/privacy/">Pulse privacy policy</a>
+  </div>
+  <footer>Contact: <a href="mailto:support@solarnebulae.com">support@solarnebulae.com</a></footer>
+</main>
+</body>
+</html>
